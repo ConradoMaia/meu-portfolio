@@ -1,0 +1,30 @@
+/* src/styles/Projects.css */
+.projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-item {
+  background-color: #F8F9FA;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.project-item h3 {
+  color: var(--text-color);
+  margin-top: 0;
+}
+
+.project-item p {
+  line-height: 1.6;
+}
+
+.project-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-item li {
+  margin-bottom: 8px;
+}
