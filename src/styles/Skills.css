@@ -1,12 +1,37 @@
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.filter-btn {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 1px solid #dee2e6;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  background-color: #f1f3f5;
+  border-color: #ced4da;
+}
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
 .skills-container {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .skill-item {
   margin-bottom: 25px;
 }
-
 .skill-info {
   display: flex;
   justify-content: space-between;
@@ -14,7 +39,6 @@
   font-weight: 500;
   color: var(--text-color);
 }
-
 .progress-bar {
   width: 100%;
   background-color: #e9ecef;
@@ -22,7 +46,6 @@
   height: 12px;
   overflow: hidden;
 }
-
 .progress-level {
   background-color: var(--primary-color);
   height: 100%;

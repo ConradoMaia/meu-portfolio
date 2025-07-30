@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../styles/Projects.css';
 
 const Projects = ({ text }) => {
@@ -7,17 +8,27 @@ const Projects = ({ text }) => {
       <h2 className="section-title">{text.title}</h2>
       <div className="projects-container">
         {text.items.map((project, index) => (
-          <div className="project-item" key={index}>
-            <h3>{project.title}</h3>
+          <motion.div
+            className="project-item"
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <div className="project-header">
+              <h3>{project.title}</h3>
+              <span className="project-year">{project.year}</span>
+            </div>
             <p>{project.description}</p>
-            {project.awards && (
+            {project.awards && project.awards.length > 0 && (
               <ul>
                 {project.awards.map((award, i) => (
                   <li key={i}>🏅 {award}</li>
                 ))}
               </ul>
             )}
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

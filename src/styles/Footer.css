@@ -1,11 +1,9 @@
-/* src/styles/Footer.css */
 .app-footer {
   background-color: var(--text-color);
   color: var(--bg-color);
   padding: 20px 40px;
   text-align: center;
 }
-
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,18 +12,15 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .footer-content p {
   margin: 5px;
 }
-
 .footer-links a {
   color: var(--bg-color);
   text-decoration: none;
   margin: 0 10px;
   transition: opacity 0.3s;
 }
-
 .footer-links a:hover {
   opacity: 0.8;
 }

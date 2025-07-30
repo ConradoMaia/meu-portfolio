@@ -1,9 +1,17 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../styles/Education.css';
 
 const Education = ({ text }) => {
   return (
-    <section id="education" className="section">
+    <motion.section 
+      id="education" 
+      className="section"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       <h2 className="section-title">{text.title}</h2>
       <div className="education-container">
         <div className="education-column">
@@ -24,7 +32,7 @@ const Education = ({ text }) => {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

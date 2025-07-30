@@ -52,47 +52,91 @@ export const textContent = {
     },
     skills: {
       title: "Habilidades Técnicas",
-        list: [
-            { name: ".NET / C#", level: 95 },
-            { name: "React", level: 75 },
-            { name: "Python", level: 80 },
-            { name: "Flutter / Dart", level: 70 },
-            { name: "SQL (MySQL, SQLite)", level: 85 },
-            { name: "Docker", level: 65 },
-            { name: "Machine Learning (TensorFlow)", level: 70 },
-            { name: "Git / GitLab", level: 90 },
-        ]
+      filters: ["Todos", "Backend & Desktop", "Frontend & Mobile", "IA & Dados", "DevOps & Outros"],
+      list: [
+        // Backend & Desktop
+        { name: ".NET / C#", level: 95, category: "Backend & Desktop" },
+        { name: "Java", level: 75, category: "Backend & Desktop" },
+        { name: "Python", level: 80, category: "Backend & Desktop" },
+        { name: "REST API", level: 90, category: "Backend & Desktop" },
+        { name: "Microservices", level: 70, category: "Backend & Desktop" },
+        { name: "Unity", level: 65, category: "Backend & Desktop" },
+        { name: "WPF", level: 90, category: "Backend & Desktop" },
+        { name: "Windows Forms", level: 85, category: "Backend & Desktop" },
+        { name: "NUnit", level: 80, category: "Backend & Desktop" },
+        { name: "Inno Setup", level: 85, category: "Backend & Desktop" },
+        { name: "MSBuild", level: 70, category: "Backend & Desktop" },
+        // Frontend & Mobile
+        { name: "React", level: 75, category: "Frontend & Mobile" },
+        { name: "JavaScript", level: 80, category: "Frontend & Mobile" },
+        { name: "Flutter / Dart", level: 70, category: "Frontend & Mobile" },
+        { name: "Android Studio", level: 65, category: "Frontend & Mobile" },
+        // IA & Dados
+        { name: "Machine Learning", level: 75, category: "IA & Dados" },
+        { name: "Deep Learning", level: 70, category: "IA & Dados" },
+        { name: "TensorFlow", level: 70, category: "IA & Dados" },
+        { name: "MySQL", level: 85, category: "IA & Dados" },
+        { name: "SQLite", level: 80, category: "IA & Dados" },
+        // DevOps & Outros
+        { name: "GitLab", level: 90, category: "DevOps & Outros" },
+        { name: "Docker", level: 65, category: "DevOps & Outros" },
+        { name: "Kubernetes", level: 60, category: "DevOps & Outros" },
+        { name: "Jenkins", level: 60, category: "DevOps & Outros" },
+        { name: "AWS", level: 50, category: "DevOps & Outros" },
+        { name: "Bash / Shell Script", level: 75, category: "DevOps & Outros" },
+        { name: "Markdown / Latex", level: 85, category: "DevOps & Outros" },
+        { name: "JSON / XML / YAML", level: 95, category: "DevOps & Outros" },
+      ]
     },
     projects: {
-      title: "Feiras e Projetos",
+      title: "Projetos Relevantes",
       items: [
         {
+          title: "TCC: Aplicação Gamificada para Desenvolvimento Cognitivo",
+          year: "2024",
+          description: "Atualmente em desenvolvimento, uma aplicação gamificada focada no desenvolvimento cognitivo infantil, com conteúdo de dessensibilização.",
+          awards: []
+        },
+        {
           title: "SIIP - Sistema Inteligente de Identificação de Pragas",
+          year: "2020/21",
           description: "Projeto que realiza a identificação autônoma de doenças em alface através de Inteligência Artificial.",
           awards: [
             "Medalha de Ouro na INTERNATIONAL SCIENCE AND INVENTION FAIR (ISIF) 2021",
-            "Primeiro lugar na categoria \"Ciência da Computação\" na MOSTRATEC 2020",
+            "Primeiro lugar em 'Ciência da Computação' na MOSTRATEC 2020",
             "Participação na FEBRACE 2021",
           ],
         },
         {
-          title: "TCC em andamento",
-          description: "Aplicação gamificada para o desenvolvimento cognitivo em crianças, com conteúdo de dessensibilização.",
+          title: "Your Skin Assistant AI",
+          year: "2020",
+          description: "Projeto de IA para análise de pele que conquistou o segundo lugar na competição Startup Garage Tecnopuc.",
+          awards: [],
         },
         {
-          title: "Your Skin Assistant AI",
-          description: "Projeto que conquistou o segundo lugar no Startup Garage Tecnopuc.",
+          title: "Projeto 'Impulsionando Talentos'",
+          year: "2021",
+          description: "Participação no programa de desenvolvimento de talentos da ALTUS, contribuindo para a ferramenta 'Master Tool'.",
+          awards: [],
+        },
+        {
+          title: "Desafio de Empreendedorismo e Soluções Inovadoras",
+          year: "2019",
+          description: "Participação em desafio de inovação na Fundação Liberato.",
+          awards: [],
         },
         {
           title: "Uso da Planta Crotalária no Combate à Dengue",
-          description: "Projeto premiado em primeiro lugar na Feira do Colégio Luterano Concórdia - FEICICC.",
+          year: "2016",
+          description: "Projeto de iniciação científica premiado em primeiro lugar geral na FEICICC.",
+          awards: [],
         },
       ],
     },
     education: {
       title: "Educação e Cursos",
       academicTitle: "Formação Acadêmica",
-      coursesTitle: "Cursos Relevantes",
+      coursesTitle: "Cursos e Certificações",
       academic: [
         {
           degree: "Bacharelado em Ciência da Computação",
@@ -108,11 +152,13 @@ export const textContent = {
         },
       ],
       courses: [
-        "Desenvolvimento Android e iOS com Flutter - Create 15 Apps (2024)",
-        "ASP.NET CORE MVC (2023-2024)",
-        "Deep Learning com Python de A a Z (2022-2023)",
-        "Design Patterns com C# (2021)",
-        "Fundamentals of Deep Learning for Computer Vision (2021)",
+        "Desenvolvimento Android e iOS com Flutter - Create 15 Apps (Udemy, 2024)",
+        "ASP.NET CORE MVC (Udemy, 2023-2024)",
+        "Deep Learning com Python de A a Z (Udemy, 2022-2023)",
+        "Design Patterns com C# (Udemy, 2021)",
+        "Fundamentals of Deep Learning for Computer Vision (NVIDIA DLI, 2021)",
+        "Professional, Emotional, and Technological Skills (PUCRS ONLINE, 2020)",
+        "Estratégia Empresarial (Fundação Bradesco, 2020)",
       ],
     },
     footer: {
@@ -135,108 +181,5 @@ export const textContent = {
       linkedin: "LinkedIn",
       github: "GitHub",
     },
-    experience: {
-      title: "Work Experience",
-      jobs: [
-        {
-          role: "C# Software Developer (R&D)",
-          company: "ALTUS SISTEMAS DE AUTOMACAO SA",
-          period: "2023 - Present",
-          tasks: [
-            "Contributed to the development of the \"MasterTool\" desktop program in C#, focusing on implementing new features, bug fixing, and documentation creation.",
-            "Architected software refactoring strategies to improve code maintainability and scalability.",
-            "Drove continuous performance enhancements, ensuring high availability and reliability of services.",
-            "Built CI/CD pipelines with GitLab.",
-          ],
-        },
-        {
-          role: "Product Designer (R&D)",
-          company: "ALTUS SISTEMAS DE AUTOMACAO SA",
-          period: "2022 - 2023",
-          tasks: [
-            "Contributed to the continuous integration and automated testing of the \"Master Tool\".",
-            "Developed and maintained communication protocols between PLCs (MODBUS, EtherNet/IP, PROFINET, EtherCAT).",
-            "Integrated the desktop application with the CodeSys Automation Platform API.",
-          ],
-        },
-        {
-          role: "Intern in .NET Software Development",
-          company: "ALTUS SISTEMAS DE AUTOMACAO SA",
-          period: "2021 - 2022",
-          tasks: [
-            "Participated in the \"Impulsionando Talentos\" program, contributing to the development of the \"Master Tool\".",
-            "Assisted in implementing new features, resolving bugs, and supporting project development.",
-          ],
-        },
-      ],
-    },
-    skills: {
-      title: "Technical Skills",
-        list: [
-            { name: ".NET / C#", level: 95 },
-            { name: "React", level: 75 },
-            { name: "Python", level: 80 },
-            { name: "Flutter / Dart", level: 70 },
-            { name: "SQL (MySQL, SQLite)", level: 85 },
-            { name: "Docker", level: 65 },
-            { name: "Machine Learning (TensorFlow)", level: 70 },
-            { name: "Git / GitLab", level: 90 },
-        ]
-    },
-    projects: {
-      title: "Fairs and Projects",
-      items: [
-        {
-          title: "SIIP - Intelligent Pest Identification System",
-          description: "Project that performs autonomous identification of diseases in lettuce using Artificial Intelligence.",
-          awards: [
-            "Gold Medal at the INTERNATIONAL SCIENCE AND INVENTION FAIR (ISIF) 2021",
-            "First place in the \"Computer Science\" category at MOSTRATEC 2020",
-            "Participation in FEBRACE 2021",
-          ],
-        },
-        {
-          title: "Undergraduate Thesis in progress",
-          description: "Gamified application for cognitive development in children, with desensitization content.",
-        },
-        {
-          title: "Your Skin Assistant AI",
-          description: "Project that won second place at the Startup Garage Tecnopuc.",
-        },
-        {
-          title: "Use of the Crotalaria Plant in Combating Dengue",
-          description: "Project awarded first place at the Colégio Luterano Concórdia Fair - FEICICC.",
-        },
-      ],
-    },
-    education: {
-      title: "Education & Courses",
-      academicTitle: "Academic Background",
-      coursesTitle: "Relevant Courses",
-      academic: [
-        {
-          degree: "Bachelor of Computer Science",
-          institution: "UNISINOS (2022 - In Progress)",
-        },
-        {
-          degree: "Technical Course in Electronics",
-          institution: "Fundação Liberato (2017-2021)",
-        },
-        {
-          degree: "English Course",
-          institution: "TIMES IDIOMAS (2024 - In Progress)",
-        },
-      ],
-      courses: [
-        "Android and iOS Development with Flutter - Create 15 Apps (2024)",
-        "ASP.NET CORE MVC (2023-2024)",
-        "Deep Learning with Python from A to Z (2022-2023)",
-        "Design Patterns with C# (2021)",
-        "Fundamentals of Deep Learning for Computer Vision (2021)",
-      ],
-    },
-    footer: {
-      text: "Developed by Conrado Maia Heckler",
-    },
-  },
+  }
 };
