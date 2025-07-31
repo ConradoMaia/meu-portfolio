@@ -1,13 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Skills.css';
 
 const Skills = ({ text }) => {
   const [activeFilter, setActiveFilter] = useState('Todos');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [sortType, setSortType] = useState('levelDesc'); // Padrão: Nível (maior-menor)
 
-  const filteredSkills = text.list.filter(skill => 
-    activeFilter === 'Todos' || skill.category === activeFilter
-  );
+  const processedSkills = useMemo(() => {
+    let filtered = text.list
+      // 1. Filtro por Categoria
+      .filter(skill => activeFilter === 'Todos' || skill.category === activeFilter)
+      // 2. Filtro por Barra de Pesquisa
+      .filter(skill => skill.name.toLowerCase().includes(searchTerm.toLowerCase()));
+
+    // 3. Ordenação
+    const sortable = [...filtered];
+    switch (sortType) {
+      case 'levelDesc':
+        sortable.sort((a, b) => b.level - a.level);
+        break;
+      case 'levelAsc':
+        sortable.sort((a, b) => a.level - b.level);
+        break;
+      case 'nameAsc':
+        sortable.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'nameDesc':
+        sortable.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      default:
+        break;
+    }
+    return sortable;
+  }, [text.list, activeFilter, searchTerm, sortType]);
 
   return (
     <section id="skills" className="section">
@@ -20,6 +46,29 @@ const Skills = ({ text }) => {
       >
         {text.title}
       </motion.h2>
+
+      <div className="skills-controls">
+        <input
+          type="text"
+          placeholder={text.searchPlaceholder}
+          className="search-input"
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <div className="sort-container">
+          <label htmlFor="sort-select">{text.sortLabel}</label>
+          <select 
+            id="sort-select"
+            className="sort-select" 
+            value={sortType} 
+            onChange={(e) => setSortType(e.target.value)}
+          >
+            <option value="levelDesc">{text.sortOptions.levelDesc}</option>
+            <option value="levelAsc">{text.sortOptions.levelAsc}</option>
+            <option value="nameAsc">{text.sortOptions.nameAsc}</option>
+            <option value="nameDesc">{text.sortOptions.nameDesc}</option>
+          </select>
+        </div>
+      </div>
 
       <div className="filter-buttons">
         {text.filters.map(filter => (
@@ -35,7 +84,7 @@ const Skills = ({ text }) => {
 
       <motion.div className="skills-container" layout>
         <AnimatePresence>
-          {filteredSkills.map((skill) => (
+          {processedSkills.map((skill) => (
             <motion.div
               className="skill-item"
               key={skill.name}

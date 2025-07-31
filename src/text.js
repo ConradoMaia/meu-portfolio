@@ -11,7 +11,7 @@ export const textContent = {
     },
     about: {
       title: "Sobre Mim",
-      paragraph: "Olá! Sou Conrado Maia Heckler, um desenvolvedor de software apaixonado pela criação de aplicações desktop e mobile. Atualmente, estou cursando Ciência da Computação na Unisinos e trabalhando como Desenvolvedor de Software C# na ALTUS Sistemas de Automação SA. Adoro aprender novas tecnologias e enfrentar projetos desafiadores.",
+      paragraph: "Oi! Sou o Conrado Maia Heckler, desenvolvedor de software com interesse especial em criar aplicações web e mobile que resolvem problemas de forma prática. Atualmente, curso Ciência da Computação na Unisinos e trabalho como desenvolvedor C# na ALTUS Sistemas de Automação. Gosto de aprender coisas novas, enfrentar desafios e encontrar soluções eficientes no dia a dia do desenvolvimento.",
       linkedin: "LinkedIn",
       github: "GitHub",
     },
@@ -23,32 +23,33 @@ export const textContent = {
           company: "ALTUS SISTEMAS DE AUTOMACAO SA",
           period: "2023 - Presente",
           tasks: [
-            "Contribuição no desenvolvimento do programa desktop \"MasterTool\" em C#, focando na implementação de novas features, correção de bugs e criação de documentação.",
-            "Arquitetura de estratégias para refatoração de software para melhorar a manutenibilidade e escalabilidade do código.",
-            "Otimização contínua de performance, garantindo alta disponibilidade e confiabilidade dos serviços.",
-            "Construção de pipelines de CI/CD com GitLab.",
-          ],
+            "Desenvolvi e mantive o programa desktop MasterTool em C#, com foco em novas funcionalidades, correções de bugs e documentação técnica.",
+            "Implementei pipelines de CI/CD com GitLab, promovendo automação e eficiência no fluxo de entrega.",
+            "Liderei estratégias de refatoração arquitetural visando maior escalabilidade e modularidade do sistema.",
+            "Realizei otimizações de performance para garantir confiabilidade e alta disponibilidade da aplicação."
+          ]
         },
         {
           role: "Product Designer (R&D)",
           company: "ALTUS SISTEMAS DE AUTOMACAO SA",
           period: "2022 - 2023",
           tasks: [
-            "Contribuição para a integração contínua e testes automatizados do \"Master Tool\".",
-            "Desenvolvimento e manutenção de protocolos de comunicação entre PLCs (MODBUS, EtherNet/IP, PROFINET, EtherCAT).",
-            "Integração da aplicação desktop com a API da CodeSys Automation Platform.",
-          ],
+            "Contribuí para a integração contínua e a criação de testes automatizados do MasterTool.",
+            "Implementei e mantive protocolos industriais de comunicação (MODBUS, EtherNet/IP, PROFINET, EtherCAT).",
+            "Realizei a integração da aplicação desktop com a API da CodeSys Automation Platform.",
+            "Orientei a equipe na implementação do Jenkins como parte da melhoria dos processos DevOps."
+          ]
         },
         {
           role: "Estagiário em Desenvolvimento de Software .NET",
           company: "ALTUS SISTEMAS DE AUTOMACAO SA",
           period: "2021 - 2022",
           tasks: [
-            "Participação no programa \"Impulsionando Talentos\", contribuindo para o desenvolvimento do \"Master Tool\".",
-            "Auxílio na implementação de novas funcionalidades, resolução de bugs e suporte ao desenvolvimento de projetos.",
-          ],
-        },
-      ],
+            "Participei do programa Impulsionando Talentos, colaborando no desenvolvimento da ferramenta MasterTool.",
+            "Implementei novas funcionalidades, corrigi bugs e ofereci suporte no desenvolvimento de projetos internos."
+          ]
+        }
+      ]
     },
     skills: {
       title: "Habilidades Técnicas",
@@ -117,46 +118,46 @@ export const textContent = {
       title: "Projetos Relevantes",
       items: [
         {
-          title: "TCC: Aplicação Gamificada para Desenvolvimento Cognitivo",
-          year: "2024",
-          description: "Atualmente em desenvolvimento, uma aplicação gamificada focada no desenvolvimento cognitivo infantil, com conteúdo de dessensibilização.",
+          title: "Aplicativo Gamificado para Desenvolvimento Cognitivo (TCC)",
+          year: "2024/25",
+          description: "Projeto finalizado como Trabalho de Conclusão de Curso (TCC). Desenvolvi um aplicativo mobile gamificado focado no desenvolvimento cognitivo infantil, com conteúdo de dessensibilização voltado à terapia de exposição.",
           awards: []
         },
         {
           title: "SIIP - Sistema Inteligente de Identificação de Pragas",
           year: "2020/21",
-          description: "Projeto que realiza a identificação autônoma de doenças em alface através de Inteligência Artificial.",
+          description: "Desenvolvi um sistema autônomo de reconhecimento de doenças em alface usando Visão Computacional e Inteligência Artificial.",
           awards: [
             "Medalha de Ouro na INTERNATIONAL SCIENCE AND INVENTION FAIR (ISIF) 2021",
             "Primeiro lugar em 'Ciência da Computação' na MOSTRATEC 2020",
-            "Participação na FEBRACE 2021",
-          ],
+            "Participação na FEBRACE 2021"
+          ]
         },
         {
           title: "Your Skin Assistant AI",
           year: "2020",
-          description: "Projeto de IA para análise de pele que conquistou o segundo lugar na competição Startup Garage Tecnopuc.",
-          awards: [],
+          description: "Criei uma aplicação de IA para análise de pele e recomendação de produtos personalizados, premiada com 2º lugar na competição Startup Garage Tecnopuc.",
+          awards: []
         },
         {
           title: "Projeto 'Impulsionando Talentos'",
           year: "2021",
-          description: "Participação no programa de desenvolvimento de talentos da ALTUS, contribuindo para a ferramenta 'Master Tool'.",
-          awards: [],
+          description: "Participei do programa de formação interna da ALTUS, colaborando no desenvolvimento da IDE MasterTool com foco em automação de processos de engenharia.",
+          awards: []
         },
         {
           title: "Desafio de Empreendedorismo e Soluções Inovadoras",
           year: "2019",
-          description: "Participação em desafio de inovação na Fundação Liberato.",
-          awards: [],
+          description: "Participei de desafio promovido pela Fundação Liberato, propondo soluções inovadoras para problemas reais do setor industrial.",
+          awards: []
         },
         {
           title: "Uso da Planta Crotalária no Combate à Dengue",
           year: "2016",
-          description: "Projeto de iniciação científica premiado em primeiro lugar geral na FEICICC.",
-          awards: [],
-        },
-      ],
+          description: "Desenvolvi projeto de iniciação científica focado na utilização da planta Crotalária no combate ao mosquito da dengue, premiado com 1º lugar geral na FEICICC.",
+          awards: []
+        }
+      ]
     },
     education: {
       title: "Educação e Cursos",
@@ -183,7 +184,12 @@ export const textContent = {
         "Design Patterns com C# (Udemy, 2021)",
         "Fundamentals of Deep Learning for Computer Vision (NVIDIA DLI, 2021)",
         "Professional, Emotional, and Technological Skills (PUCRS ONLINE, 2020)",
-        "Estratégia Empresarial (Fundação Bradesco, 2020)",
+        "Scrum Fundamentals Certified (SCRUMstudy, 2020)",
+        "Introdução ao JavaScript (Fundação Bradesco, 2020)",
+        "Modelagem de Dados (Fundação Bradesco, 2020)",
+        "Estratégia de Negócios (Fundação Bradesco, 2020)",
+        "Como elaborar um Plano de Negócio (SEBRAE, 2020)",
+        "Gestão Financeira (SEBRAE, 2020)",
       ],
     },
     footer: {
@@ -202,7 +208,7 @@ export const textContent = {
     },
     about: {
       title: "About Me",
-      paragraph: "Hello! I'm Conrado Maia Heckler, a software developer passionate about creating desktop and mobile applications. I am currently pursuing a degree in Computer Science at Unisinos and working as a C# Software Developer at ALTUS Sistemas de Automação SA. I love learning new technologies and tackling challenging projects.",
+      paragraph: "Hi! I'm Conrado Maia Heckler, a software developer with a special interest in creating practical web and mobile applications that solve real-world problems. I'm currently pursuing a degree in Computer Science at Unisinos and working as a C# developer at ALTUS Sistemas de Automação. I enjoy learning new things, facing challenges, and finding efficient solutions in my daily development work.",
       linkedin: "LinkedIn",
       github: "GitHub",
     },
@@ -214,32 +220,33 @@ export const textContent = {
           company: "ALTUS SISTEMAS DE AUTOMACAO SA",
           period: "2023 - Present",
           tasks: [
-            "Contributed to the development of the \"MasterTool\" desktop program in C#, focusing on implementing new features, bug fixing, and documentation creation.",
-            "Architected software refactoring strategies to improve code maintainability and scalability.",
-            "Drove continuous performance enhancements, ensuring high availability and reliability of services.",
-            "Built CI/CD pipelines with GitLab.",
-          ],
+            "Developed and maintained the MasterTool desktop program in C#, focusing on new features, bug fixes, and technical documentation.",
+            "Implemented CI/CD pipelines with GitLab, promoting automation and efficiency in the delivery workflow.",
+            "Led architectural refactoring strategies aimed at greater system scalability and modularity.",
+            "Performed performance optimizations to ensure application reliability and high availability."
+          ]
         },
         {
           role: "Product Designer (R&D)",
           company: "ALTUS SISTEMAS DE AUTOMACAO SA",
           period: "2022 - 2023",
           tasks: [
-            "Contributed to continuous integration and automated testing for the \"Master Tool\".",
-            "Developed and maintained communication protocols between PLCs (MODBUS, EtherNet/IP, PROFINET, EtherCAT).",
+            "Contributed to the continuous integration and creation of automated tests for MasterTool.",
+            "Implemented and maintained industrial communication protocols (MODBUS, EtherNet/IP, PROFINET, EtherCAT).",
             "Integrated the desktop application with the CodeSys Automation Platform API.",
-          ],
+            "Guided the team in implementing Jenkins as part of improving DevOps processes."
+          ]
         },
         {
           role: "Intern in .NET Software Development",
           company: "ALTUS SISTEMAS DE AUTOMACAO SA",
           period: "2021 - 2022",
           tasks: [
-            "Participated in the \"Driving Talents\" program, contributing to the development of the \"Master Tool\".",
-            "Assisted in implementing new features, resolving bugs, and supporting project development.",
-          ],
-        },
-      ],
+            "Participated in the 'Driving Talents' program, collaborating on the development of the MasterTool tool.",
+            "Implemented new features, fixed bugs, and provided support for internal project development."
+          ]
+        }
+      ]
     },
     skills: {
       title: "Technical Skills",
@@ -308,46 +315,46 @@ export const textContent = {
       title: "Relevant Projects",
       items: [
         {
-          title: "UG Thesis: Gamified App for Cognitive Development",
-          year: "2024",
-          description: "Currently in development, a gamified application focused on children's cognitive development, with desensitization content.",
+          title: "Gamified App for Cognitive Development (UG Thesis)",
+          year: "2024/25",
+          description: "Completed as a final undergraduate project. I developed a gamified mobile app focused on children's cognitive development, with desensitization content geared towards exposure therapy.",
           awards: []
         },
         {
           title: "SIIP - Intelligent Pest Identification System",
           year: "2020/21",
-          description: "A project that performs autonomous identification of diseases in lettuce using Artificial Intelligence.",
+          description: "Developed an autonomous system for recognizing diseases in lettuce using Computer Vision and Artificial Intelligence.",
           awards: [
             "Gold Medal at the INTERNATIONAL SCIENCE AND INVENTION FAIR (ISIF) 2021",
-            "First place in the 'Computer Science' category at MOSTRATEC 2020",
-            "Participation in FEBRACE 2021",
-          ],
+            "First place in 'Computer Science' at MOSTRATEC 2020",
+            "Participation in FEBRACE 2021"
+          ]
         },
         {
           title: "Your Skin Assistant AI",
           year: "2020",
-          description: "An AI project for skin analysis that won second place in the Startup Garage Tecnopuc competition.",
-          awards: [],
+          description: "Created an AI application for skin analysis and personalized product recommendations, awarded 2nd place in the Startup Garage Tecnopuc competition.",
+          awards: []
         },
         {
           title: "'Driving Talents' Project",
           year: "2021",
-          description: "Participation in ALTUS's talent development program, contributing to the 'Master Tool' software.",
-          awards: [],
+          description: "Participated in ALTUS's internal training program, collaborating on the development of the MasterTool IDE with a focus on automating engineering processes.",
+          awards: []
         },
         {
           title: "Entrepreneurship and Innovative Solutions Challenge",
           year: "2019",
-          description: "Participation in an innovation challenge at Liberato Foundation.",
-          awards: [],
+          description: "Participated in a challenge promoted by the Liberato Foundation, proposing innovative solutions to real problems in the industrial sector.",
+          awards: []
         },
         {
           title: "Use of the Crotalaria Plant in Combating Dengue",
           year: "2016",
-          description: "A scientific initiation project awarded first place overall at FEICICC.",
-          awards: [],
-        },
-      ],
+          description: "Developed a scientific initiation project focused on using the Crotalaria plant to combat the dengue mosquito, awarded 1st place overall at FEICICC.",
+          awards: []
+        }
+      ]
     },
     education: {
       title: "Education & Courses",
@@ -374,7 +381,12 @@ export const textContent = {
         "Design Patterns with C# (Udemy, 2021)",
         "Fundamentals of Deep Learning for Computer Vision (NVIDIA DLI, 2021)",
         "Professional, Emotional, and Technological Skills (PUCRS ONLINE, 2020)",
+        "Scrum Fundamentals Certified (SCRUMstudy, 2020)",
+        "Introduction to JavaScript (Fundação Bradesco, 2020)",
+        "Data Modeling (Fundação Bradesco, 2020)",
         "Business Strategy (Fundação Bradesco, 2020)",
+        "How to Create a Business Plan (SEBRAE, 2020)",
+        "Financial Management (SEBRAE, 2020)",
       ],
     },
     footer: {
