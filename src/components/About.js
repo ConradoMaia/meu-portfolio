@@ -18,8 +18,6 @@ const About = ({ text, onExportPdf }) => {
       <div className="contact-links">
         <a href="mailto:conrado.maiaheckler@gmail.com" target="_blank" rel="noopener noreferrer">conrado.maiaheckler@gmail.com</a>
         <span> | </span>
-        <a href="tel:+51992614004">51 99261-4004</a>
-        <span> | </span>
         <a href="https://linkedin.com/in/conradomaiaheckler" target="_blank" rel="noopener noreferrer">{text.linkedin}</a>
         <span> | </span>
         <a href="https://github.com/ConradoMaia" target="_blank" rel="noopener noreferrer">{text.github}</a>

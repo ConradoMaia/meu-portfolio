@@ -10,8 +10,10 @@ export const textContent = {
       },
     },
     about: {
+      name: "Conrado Maia Heckler",
+      jobTitle: "Software Developer",
       title: "Sobre Mim",
-      paragraph: "Oi! Sou o Conrado Maia Heckler, desenvolvedor de software com interesse especial em criar aplicações web e mobile que resolvem problemas de forma prática. Atualmente, curso Ciência da Computação na Unisinos e trabalho como desenvolvedor C# na ALTUS Sistemas de Automação. Gosto de aprender coisas novas, enfrentar desafios e encontrar soluções eficientes no dia a dia do desenvolvimento.",
+      paragraph: "Oi! Sou o Conrado Maia Heckler, desenvolvedor de software com interesse especial em criar aplicações web e mobile que resolvem problemas de forma prática. Atualmente, curso Ciência da Computação na Unisinos e trabalho como desenvolvedor C# na ALTUS Sistemas de Automação SA. Gosto de aprender coisas novas, enfrentar desafios e encontrar soluções eficientes no dia a dia do desenvolvimento.",
       linkedin: "LinkedIn",
       github: "GitHub",
     },
@@ -53,6 +55,7 @@ export const textContent = {
     },
     skills: {
       title: "Habilidades Técnicas",
+      pdfTitle: "Principais Habilidades",
       searchPlaceholder: "Pesquisar habilidade...",
       sortLabel: "Ordenar por:",
       sortOptions: {
@@ -122,6 +125,12 @@ export const textContent = {
           year: "2024/25",
           description: "Projeto finalizado como Trabalho de Conclusão de Curso (TCC). Desenvolvi um aplicativo mobile gamificado focado no desenvolvimento cognitivo infantil, com conteúdo de dessensibilização voltado à terapia de exposição.",
           awards: []
+        },
+        {
+          title: "Team Building para Lideranças ALTUS",
+          year: "2023",
+          description: "Participação em evento de Team Building focado no desenvolvimento e integração de habilidades de liderança na ALTUS Sistemas de Automação S.A.",
+          awards: [],
         },
         {
           title: "SIIP - Sistema Inteligente de Identificação de Pragas",
@@ -207,8 +216,10 @@ export const textContent = {
       },
     },
     about: {
+      name: "Conrado Maia Heckler",
+      jobTitle: "Software Developer",
       title: "About Me",
-      paragraph: "Hi! I'm Conrado Maia Heckler, a software developer with a special interest in creating practical web and mobile applications that solve real-world problems. I'm currently pursuing a degree in Computer Science at Unisinos and working as a C# developer at ALTUS Sistemas de Automação. I enjoy learning new things, facing challenges, and finding efficient solutions in my daily development work.",
+      paragraph: "Hi! I'm Conrado Maia Heckler, a software developer with a special interest in creating practical web and mobile applications that solve real-world problems. I'm currently pursuing a degree in Computer Science at Unisinos and working as a C# developer at ALTUS Sistemas de Automação SA. I enjoy learning new things, facing challenges, and finding efficient solutions in my daily development work.",
       linkedin: "LinkedIn",
       github: "GitHub",
     },
@@ -250,6 +261,7 @@ export const textContent = {
     },
     skills: {
       title: "Technical Skills",
+      pdfTitle: "Core Skills",
       searchPlaceholder: "Search skill...",
       sortLabel: "Sort by:",
       sortOptions: {
@@ -319,6 +331,12 @@ export const textContent = {
           year: "2024/25",
           description: "Completed as a final undergraduate project. I developed a gamified mobile app focused on children's cognitive development, with desensitization content geared towards exposure therapy.",
           awards: []
+        },
+        {
+          title: "Team Building for ALTUS Leadership",
+          year: "2023",
+          description: "Participation in a Team Building event focused on the development and integration of leadership skills at ALTUS Sistemas de Automação S.A.",
+          awards: [],
         },
         {
           title: "SIIP - Intelligent Pest Identification System",
