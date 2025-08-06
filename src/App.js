@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import './styles/App.css';
 import { textContent } from './text';
 
+import { motion } from 'framer-motion';
+
 function App() {
   const [language, setLanguage] = useState('pt');
 
@@ -21,6 +23,18 @@ function App() {
   };
 
   const currentText = textContent[language] || textContent.pt;
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: 'easeOut'
+      }
+    }
+  };
 
   const exportToPdf = () => {
     const pdf = new jsPDF('p', 'mm', 'a4');
@@ -107,7 +121,8 @@ function App() {
 
     let skillText = '';
     for (const category in skillsByCategory) {
-        skillText += `\n${category}: ${skillsByCategory[category].join(', ')}`;
+        skillText += `
+${category}: ${skillsByCategory[category].join(', ')}`;
     }
     const skillLines = pdf.splitTextToSize(skillText.trim(), usableWidth);
     pdf.text(skillLines, margin, y);
@@ -140,15 +155,25 @@ function App() {
         onLanguageChange={handleLanguageChange}
         currentLanguage={language}
       />
-      <main>
-        <About 
-          text={currentText.about} 
-          onExportPdf={exportToPdf} 
-        />
-        <Experience text={currentText.experience} />
-        <Skills text={currentText.skills} />
-        <Projects text={currentText.projects} />
-        <Education text={currentText.education} />
+      <main className="container">
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionVariants}>
+          <About 
+            text={currentText.about} 
+            onExportPdf={exportToPdf} 
+          />
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionVariants}>
+          <Experience text={currentText.experience} />
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionVariants}>
+          <Skills text={currentText.skills} />
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionVariants}>
+          <Projects text={currentText.projects} />
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionVariants}>
+          <Education text={currentText.education} />
+        </motion.div>
       </main>
       <Footer text={currentText.footer} />
     </div>
