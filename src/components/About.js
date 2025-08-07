@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import '../styles/About.css';
-import profilePic from '../logo.svg'; // Placeholder, você pode trocar
+import profilePic from '../profile.jpg';
 
-const About = ({ text, onExportPdf }) => {
+const About = ({ text }) => {
   return (
     <motion.section
       id="about"
@@ -24,16 +25,21 @@ const About = ({ text, onExportPdf }) => {
           transition={{ duration: 0.5, delay: 0.2 }}
         />
         <div className="about-text-content">
-          <p className="about-text">{text.paragraph}</p>
-          <div className="contact-links">
-            <a href="mailto:conrado.maiaheckler@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-            <a href="https://linkedin.com/in/conradomaiaheckler" target="_blank" rel="noopener noreferrer">{text.linkedin}</a>
-            <a href="https://github.com/ConradoMaia" target="_blank" rel="noopener noreferrer">{text.github}</a>
+          <div className="about-text-wrapper">
+            <p className="about-text">{text.paragraph}</p>
           </div>
-          <div className="about-buttons">
-            <button onClick={onExportPdf} className="export-button">
-              {text.title === "Sobre Mim" ? "Baixar Currículo" : "Download Resume"}
-            </button>
+          <div className="about-contact-wrapper">
+            <div className="contact-links">
+              <a href="mailto:conrado.maiaheckler@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                <FaEnvelope />
+              </a>
+              <a href="https://linkedin.com/in/conradomaiaheckler" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <FaLinkedin />
+              </a>
+              <a href="https://github.com/ConradoMaia" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <FaGithub />
+              </a>
+            </div>
           </div>
         </div>
       </div>

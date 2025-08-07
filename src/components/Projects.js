@@ -17,10 +17,7 @@ const Projects = ({ text }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.15 }}
           >
-            <div className="project-image-container">
-              {/* Substitua pelo seu componente de imagem ou tag <img> */}
-              <span>{project.title}</span>
-            </div>
+            
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
