@@ -1,39 +1,99 @@
 .about-section {
   text-align: center;
+  padding: 60px 20px;
 }
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; 
+  gap: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left; 
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--white-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  flex-shrink: 0; 
+}
+
+.about-text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-text {
   font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto 30px auto;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify; 
+  max-width: 600px; 
 }
+
+.contact-links {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .contact-links a {
   color: var(--primary-color);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  margin: 0 20px; 
+  transition: color 0.3s;
+  font-size: 2.2rem; 
 }
+
 .contact-links a:hover {
-  text-decoration: underline;
+  color: var(--text-color);
 }
-.contact-links span {
-  margin: 0 10px;
-  color: var(--primary-color);
-}
+
 .about-buttons {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 20px;
 }
+
 .export-button {
   background-color: var(--primary-color);
   color: var(--white-color);
   border: none;
-  padding: 12px 24px;
+  padding: 15px 30px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
 .export-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+  background-color: #0056b3; 
+}
+
+
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    text-align: justify;
+  }
 }

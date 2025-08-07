@@ -1,3 +1,55 @@
+const skillsList = [
+  // Linguagens
+  { name: "C#", level: 100, category: "Linguagens" },
+  { name: "Java", level: 50, category: "Linguagens" },
+  { name: "Python", level: 80, category: "Linguagens" },
+  { name: "Dart", level: 30, category: "Linguagens" },
+  { name: "JavaScript", level: 65, category: "Linguagens" },
+  { name: "TypeScript", level: 65, category: "Linguagens" },
+  { name: "SQL", level: 90, category: "Linguagens" },
+  { name: "Bash / Shell Script", level: 95, category: "Linguagens" },
+  { name: "Structured Text (ST)", level: 90, category: "Linguagens" },
+  // Backend & Desktop
+  { name: ".NET", level: 100, category: "Backend & Desktop" },
+  { name: "REST API", level: 90, category: "Backend & Desktop" },
+  { name: "Arquitetura de Microsserviços", level: 60, category: "Backend & Desktop" },
+  { name: "WPF", level: 50, category: "Backend & Desktop" },
+  { name: "Windows Forms", level: 85, category: "Backend & Desktop" },
+  { name: "Unity", level: 60, category: "Backend & Desktop" },
+  { name: "Inno Setup", level: 100, category: "Backend & Desktop" },
+  { name: "MSBuild", level: 100, category: "Backend & Desktop" },
+  { name: "NUnit", level: 80, category: "Backend & Desktop" },
+  // Frontend & Mobile
+  { name: "React", level: 75, category: "Frontend & Mobile" },
+  { name: "Flutter", level: 60, category: "Frontend & Mobile" },
+  { name: "Android Studio", level: 60, category: "Frontend & Mobile" },
+  { name: "HTML & CSS", level: 80, category: "Frontend & Mobile" },
+  // IA & Dados
+  { name: "Machine Learning", level: 70, category: "IA & Dados" },
+  { name: "Deep Learning", level: 70, category: "IA & Dados" },
+  { name: "TensorFlow", level: 70, category: "IA & Dados" },
+  { name: "Pandas / NumPy", level: 70, category: "IA & Dados" },
+  { name: "MySQL", level: 90, category: "IA & Dados" },
+  { name: "SQLite", level: 90, category: "IA & Dados" },
+  { name: "Firebase / Firestore", level: 80, category: "IA & Dados" },
+  // DevOps
+  { name: "GitLab", level: 90, category: "DevOps" },
+  { name: "Pipelines de CI/CD", level: 85, category: "DevOps" },
+  { name: "Docker", level: 65, category: "DevOps" },
+  { name: "Kubernetes", level: 50, category: "DevOps" },
+  { name: "Jenkins", level: 50, category: "DevOps" },
+  { name: "AWS (EC2, S3, Lambda)", level: 50, category: "DevOps" },
+  { name: "IAM e Permissões (AWS)", level: 30, category: "DevOps" },
+  { name: "Terraform (Básico)", level: 20, category: "DevOps" },
+  // Ferramentas & Outros
+  { name: "GIT", level: 100, category: "Ferramentas & Outros" },
+  { name: "Bugzilla", level: 100, category: "Ferramentas & Outros" },
+  { name: "Markdown / LaTeX", level: 85, category: "Ferramentas & Outros" },
+  { name: "JSON / XML / YAML", level: 100, category: "Ferramentas & Outros" },
+  { name: "Visual Studio", level: 80, category: "Ferramentas & Outros" },
+  { name: "SCRUM / Metodologias Ágeis", level: 80, category: "Ferramentas & Outros" }
+];
+
 export const textContent = {
   pt: {
     header: {
@@ -13,7 +65,7 @@ export const textContent = {
       name: "Conrado Maia Heckler",
       jobTitle: "Software Developer",
       title: "Sobre Mim",
-      paragraph: "Oi! Sou o Conrado Maia Heckler, desenvolvedor de software com interesse especial em criar aplicações web e mobile que resolvem problemas de forma prática. Atualmente, curso Ciência da Computação na Unisinos e trabalho como desenvolvedor C# na ALTUS Sistemas de Automação SA. Gosto de aprender coisas novas, enfrentar desafios e encontrar soluções eficientes no dia a dia do desenvolvimento.",
+      paragraph: "Oi! Sou o Conrado Maia Heckler, desenvolvedor de software com interesse especial em criar aplicações web e mobile que resolvem problemas de forma prática. Atualmente, curso Ciência da Computação na Unisinos e trabalho como desenvolvedor C# na ALTUS Sistemas de Automação. Gosto de aprender coisas novas, enfrentar desafios e encontrar soluções eficientes no dia a dia do desenvolvimento.",
       linkedin: "LinkedIn",
       github: "GitHub",
     },
@@ -65,57 +117,7 @@ export const textContent = {
         nameDesc: "Nome (Z-A)",
       },
       filters: ["Todos", "Linguagens", "Backend & Desktop", "Frontend & Mobile", "IA & Dados", "DevOps", "Ferramentas & Outros"],
-      list: [
-        // Linguagens
-        { name: "C#", level: 100, category: "Linguagens" },
-        { name: "Java", level: 50, category: "Linguagens" },
-        { name: "Python", level: 80, category: "Linguagens" },
-        { name: "Dart", level: 30, category: "Linguagens" },
-        { name: "JavaScript", level: 65, category: "Linguagens" },
-        { name: "TypeScript", level: 65, category: "Linguagens" },
-        { name: "SQL", level: 90, category: "Linguagens" },
-        { name: "Bash / Shell Script", level: 95, category: "Linguagens" },
-        { name: "Structured Text (ST)", level: 90, category: "Linguagens" },
-        // Backend & Desktop
-        { name: ".NET", level: 100, category: "Backend & Desktop" },
-        { name: "REST API", level: 90, category: "Backend & Desktop" },
-        { name: "Arquitetura de Microsserviços", level: 60, category: "Backend & Desktop" },
-        { name: "WPF", level: 50, category: "Backend & Desktop" },
-        { name: "Windows Forms", level: 85, category: "Backend & Desktop" },
-        { name: "Unity", level: 60, category: "Backend & Desktop" },
-        { name: "Inno Setup", level: 100, category: "Backend & Desktop" },
-        { name: "MSBuild", level: 100, category: "Backend & Desktop" },
-        { name: "NUnit", level: 80, category: "Backend & Desktop" },
-        // Frontend & Mobile
-        { name: "React", level: 75, category: "Frontend & Mobile" },
-        { name: "Flutter", level: 60, category: "Frontend & Mobile" },
-        { name: "Android Studio", level: 60, category: "Frontend & Mobile" },
-        { name: "HTML & CSS", level: 80, category: "Frontend & Mobile" },
-        // IA & Dados
-        { name: "Machine Learning", level: 70, category: "IA & Dados" },
-        { name: "Deep Learning", level: 70, category: "IA & Dados" },
-        { name: "TensorFlow", level: 70, category: "IA & Dados" },
-        { name: "Pandas / NumPy", level: 70, category: "IA & Dados" },
-        { name: "MySQL", level: 90, category: "IA & Dados" },
-        { name: "SQLite", level: 90, category: "IA & Dados" },
-        { name: "Firebase / Firestore", level: 80, category: "IA & Dados" },
-        // DevOps
-        { name: "GitLab", level: 90, category: "DevOps" },
-        { name: "Pipelines de CI/CD", level: 85, category: "DevOps" },
-        { name: "Docker", level: 65, category: "DevOps" },
-        { name: "Kubernetes", level: 50, category: "DevOps" },
-        { name: "Jenkins", level: 50, category: "DevOps" },
-        { name: "AWS (EC2, S3, Lambda)", level: 50, category: "DevOps" },
-        { name: "IAM e Permissões (AWS)", level: 30, category: "DevOps" },
-        { name: "Terraform (Básico)", level: 20, category: "DevOps" },
-        // Ferramentas & Outros
-        { name: "GIT", level: 100, category: "Ferramentas & Outros" },
-        { name: "Bugzilla", level: 100, category: "Ferramentas & Outros" },
-        { name: "Markdown / LaTeX", level: 85, category: "Ferramentas & Outros" },
-        { name: "JSON / XML / YAML", level: 100, category: "Ferramentas & Outros" },
-        { name: "Visual Studio", level: 80, category: "Ferramentas & Outros" },
-        { name: "SCRUM / Metodologias Ágeis", level: 80, category: "Ferramentas & Outros" }
-      ]
+      list: skillsList,
     },
     projects: {
       title: "Projetos Relevantes",
@@ -219,7 +221,7 @@ export const textContent = {
       name: "Conrado Maia Heckler",
       jobTitle: "Software Developer",
       title: "About Me",
-      paragraph: "Hi! I'm Conrado Maia Heckler, a software developer with a special interest in creating practical web and mobile applications that solve real-world problems. I'm currently pursuing a degree in Computer Science at Unisinos and working as a C# developer at ALTUS Sistemas de Automação SA. I enjoy learning new things, facing challenges, and finding efficient solutions in my daily development work.",
+      paragraph: "Hi! I'm Conrado Maia Heckler, a software developer with a special interest in creating practical web and mobile applications that solve real-world problems. I'm currently pursuing a degree in Computer Science at Unisinos and working as a C# developer at ALTUS Sistemas de Automação. I enjoy learning new things, facing challenges, and finding efficient solutions in my daily development work.",
       linkedin: "LinkedIn",
       github: "GitHub",
     },
@@ -271,57 +273,14 @@ export const textContent = {
         nameDesc: "Name (Z-A)",
       },
       filters: ["All", "Languages", "Backend & Desktop", "Frontend & Mobile", "AI & Data", "DevOps", "Tools & Others"],
-      list: [
-        // Languages
-        { name: "C#", level: 100, category: "Languages" },
-        { name: "Java", level: 50, category: "Languages" },
-        { name: "Python", level: 80, category: "Languages" },
-        { name: "Dart", level: 30, category: "Languages" },
-        { name: "JavaScript", level: 65, category: "Languages" },
-        { name: "TypeScript", level: 65, category: "Languages" },
-        { name: "SQL", level: 90, category: "Languages" },
-        { name: "Bash / Shell Script", level: 95, category: "Languages" },
-        { name: "Structured Text (ST)", level: 90, category: "Languages" },
-        // Backend & Desktop
-        { name: ".NET", level: 100, category: "Backend & Desktop" },
-        { name: "REST API", level: 90, category: "Backend & Desktop" },
-        { name: "Microservices Architecture", level: 60, category: "Backend & Desktop" },
-        { name: "WPF", level: 50, category: "Backend & Desktop" },
-        { name: "Windows Forms", level: 85, category: "Backend & Desktop" },
-        { name: "Unity", level: 60, category: "Backend & Desktop" },
-        { name: "Inno Setup", level: 100, category: "Backend & Desktop" },
-        { name: "MSBuild", level: 100, category: "Backend & Desktop" },
-        { name: "NUnit", level: 80, category: "Backend & Desktop" },
-        // Frontend & Mobile
-        { name: "React", level: 75, category: "Frontend & Mobile" },
-        { name: "Flutter", level: 60, category: "Frontend & Mobile" },
-        { name: "Android Studio", level: 60, category: "Frontend & Mobile" },
-        { name: "HTML & CSS", level: 80, category: "Frontend & Mobile" },
-        // AI & Data
-        { name: "Machine Learning", level: 70, category: "AI & Data" },
-        { name: "Deep Learning", level: 70, category: "AI & Data" },
-        { name: "TensorFlow", level: 70, category: "AI & Data" },
-        { name: "Pandas / NumPy", level: 70, category: "AI & Data" },
-        { name: "MySQL", level: 90, category: "AI & Data" },
-        { name: "SQLite", level: 90, category: "AI & Data" },
-        { name: "Firebase / Firestore", level: 80, category: "AI & Data" },
-        // DevOps
-        { name: "GitLab", level: 90, category: "DevOps" },
-        { name: "CI/CD Pipelines", level: 85, category: "DevOps" },
-        { name: "Docker", level: 65, category: "DevOps" },
-        { name: "Kubernetes", level: 50, category: "DevOps" },
-        { name: "Jenkins", level: 50, category: "DevOps" },
-        { name: "AWS (EC2, S3, Lambda)", level: 50, category: "DevOps" },
-        { name: "IAM & Permissions (AWS)", level: 30, category: "DevOps" },
-        { name: "Terraform (Basics)", level: 20, category: "DevOps" },
-        // Tools & Others
-        { name: "GIT", level: 100, category: "Tools & Others" },
-        { name: "Bugzilla", level: 100, category: "Tools & Others" },
-        { name: "Markdown / LaTeX", level: 85, category: "Tools & Others" },
-        { name: "JSON / XML / YAML", level: 100, category: "Tools & Others" },
-        { name: "Visual Studio", level: 80, category: "Tools & Others" },
-        { name: "SCRUM / Agile", level: 80, category: "Tools & Others" }
-      ]
+      list: skillsList.map(skill => ({
+        ...skill,
+        category: skill.category.replace("Linguagens", "Languages")
+                               .replace("Backend & Desktop", "Backend & Desktop")
+                               .replace("Frontend & Mobile", "Frontend & Mobile")
+                               .replace("IA & Dados", "AI & Data")
+                               .replace("Ferramentas & Outros", "Tools & Others")
+      })),
     },
     projects: {
       title: "Relevant Projects",
@@ -355,7 +314,7 @@ export const textContent = {
           awards: []
         },
         {
-          title: "'Driving Talents' Project",
+          title: "Project 'Impulsionando Talentos'",
           year: "2021",
           description: "Participated in ALTUS's internal training program, collaborating on the development of the MasterTool IDE with a focus on automating engineering processes.",
           awards: []
